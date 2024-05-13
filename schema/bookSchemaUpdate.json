@@ -1,0 +1,92 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "isbn",
+        "author",
+        "language",
+        "pages",
+        "publisher",
+        "title",
+        "year"
+    ],
+    "properties": {
+        "isbn": {
+            "type": "string",
+            "default": 0,
+            "title": "The isbn Schema",
+            "examples": [
+                "1234456778"
+            ]
+        },
+        "amazon_url": {
+            "type": "string",
+            "default": "",
+            "title": "The amazon_url Schema",
+            "examples": [
+                "amazon.com"
+            ]
+        },
+        "author": {
+            "type": "string",
+            "default": "",
+            "title": "The author Schema",
+            "examples": [
+                "Sean Murray"
+            ]
+        },
+        "language": {
+            "type": "string",
+            "default": "",
+            "title": "The language Schema",
+            "examples": [
+                "English"
+            ]
+        },
+        "pages": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pages Schema",
+            "examples": [
+                215
+            ]
+        },
+        "publisher": {
+            "type": "string",
+            "default": "",
+            "title": "The publisher Schema",
+            "examples": [
+                "DC Comics"
+            ]
+        },
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Batman: Curse of the White Knight"
+            ]
+        },
+        "year": {
+            "type": "integer",
+            "default": 0,
+            "title": "The year Schema",
+            "examples": [
+                2020
+            ]
+        }
+    },
+    "examples": [{
+        "isbn": 1234456778,
+        "amazon_url": "amazon.com",
+        "author": "Sean Murray",
+        "language": "English",
+        "pages": 215,
+        "publisher": "DC Comics",
+        "title": "Batman: Curse of the White Knight",
+        "year": 2020
+    }]
+}
